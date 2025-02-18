@@ -13,8 +13,54 @@ PS D:\Desktop\File_Name> Python
 >>> sys.getrefrencecount(2)                 Output : 4294967295
 ```
 
-<img src="https://github.com/user-attachments/assets/ae42ce45-5b71-440c-9251-48e27dcb1dc5" alt="Stack1" width="750" height="500">
+<img src="https://github.com/user-attachments/assets/ae42ce45-5b71-440c-9251-48e27dcb1dc5" alt="Stack1" width="750" height="400">
 
 
-## In List
+- ### In List
+
+
+<img src="https://github.com/user-attachments/assets/49ce0bc2-9c69-4134-943a-b71020bfb8ef" alt="Stack1" width="650" height="300">
+
+``` py 
+PS D:\Desktop\File_Name> Python
+
+>>> myListOne = [1,2,3]
+>>> myListTwo = myListOne
+>>>
+>>> myListOne                  Output : [1,2,3] 
+>>>
+>>> myListTwo                  Output : [1,2,3] 
+>>>
+>>> myListOne[0] = 55
+>>> myListOne                  Output : [55,2,3] 
+>>>
+>>> myListTwo                  Output : [1,2,3]
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
