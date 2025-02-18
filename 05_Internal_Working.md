@@ -13,5 +13,8 @@ PS D:\Desktop\File_Name> Python
 >>> sys.getrefrencecount(2)                 Output : 4294967295
 ```
 
-<img src="https://github.com/user-attachments/assets/ae42ce45-5b71-440c-9251-48e27dcb1dc5" alt="Stack1" width="600" height="400">
+<img src="https://github.com/user-attachments/assets/ae42ce45-5b71-440c-9251-48e27dcb1dc5" alt="Stack1" width="750" height="500">
+
+
+## In List
 
