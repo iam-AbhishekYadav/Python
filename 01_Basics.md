@@ -9,3 +9,6 @@
 ``` py
 print ("Hello I am Abhishek Yadav")             Output : Hello I am Abhishek Yadav
 ```
+
+> [!NOTE]  
+> # is used for comment in Python
