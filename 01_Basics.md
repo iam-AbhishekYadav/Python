@@ -11,4 +11,4 @@ print ("Hello I am Abhishek Yadav")             Output : Hello I am Abhishek Yad
 ```
 
 > [!NOTE]  
-> # is used for comment in Python
+> `#` is used for comment in Python
