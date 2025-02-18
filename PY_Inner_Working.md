@@ -9,5 +9,16 @@
 - Byte code run faster.
 - - `.pyc` ---> Compiled Python (Frozin Binaries)
   - __ pycache __
-  - File_Name.cpython-3.12.pyc  (Source Change & Python Version)
+  - `File_Name.cpython-3.12.pyc`  (Source Change & Python Version)
+- Work only for imported files.
+- Not for top level files.
 
+
+## # Python Virtual Machine (PVM)
+
+- Code loop to iterate byte code.
+- Run time Engine
+- Also Known as Python Interpreter
+- Byte Code is not machin code
+- Python specific Interpretation
+- cPython (Standard implementation) , Iron Python , Stackless.pypy
