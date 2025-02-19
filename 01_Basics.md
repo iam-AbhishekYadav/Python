@@ -38,7 +38,17 @@ _color = "blue"     #valid variable name
 $color = "orange"   #invalid variable name
 ```
 
+# # Input in Python
 
+- **`input()`** statement is used to accept values (Using Keyboard) from user.
+- **`input()`** ---> Result for input is always a string.
+- **`int(input())`** ---> Result for input is always a int.
+- **`float(input())`** ---> Result for input is always a float.
+
+``` py
+name = input("Enter your name : ")         Output : Enter your name : Abhishek Yadav
+print("Welcome ", name)                    Output : Welcome Abhishek Yadav
+```
 
 
 
