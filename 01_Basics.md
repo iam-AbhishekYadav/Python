@@ -46,8 +46,13 @@ $color = "orange"   #invalid variable name
 - **`float(input())`** ---> Result for input is always a float.
 
 ``` py
-name = input("Enter your name : ")         Output : Enter your name : Abhishek Yadav
-print("Welcome ", name)                    Output : Welcome Abhishek Yadav
+name = input("Enter your name : ")         Output : Enter your name : `Abhishek Yadav`
+print("Welcome ", name)                    Output : Welcome `Abhishek Yadav`
+
+
+age = int(input("Enter your age : "))               Output : Enter your age : 21
+print("Your age is ", age)                           Output : Your age is 21
+
 ```
 
 
