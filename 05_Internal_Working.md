@@ -37,7 +37,7 @@ PS D:\Desktop\File_Name> Python
 >>> myListTwo                  Output : [1,2,3]
 ```
 
-> Examples - 01
+> Example - 01
 
 ``` py
 PS D:\Desktop\File_Name> Python
@@ -54,7 +54,23 @@ PS D:\Desktop\File_Name> Python
 >>> l2                    Output : [44,2,3]
 ```
 
+> Example - 02
 
+``` py
+PS D:\Desktop\File_Name> Python
+
+>>> p1 = [1,2,3]
+>>> p2 = p1
+>>> p2 = [1,2,3]
+>>>
+>>> p1                     Output : [1,2,3]
+>>> p2                     Output : [1,2,3]
+>>>
+>>> p1 [0] = 55
+>>>
+>>> p1                    Output : [55,2,3]
+>>> p2                    Output : [1,2,3]
+```
 
 
 
