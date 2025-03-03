@@ -125,7 +125,35 @@
 >>> int("10000",2)              Output : 16       # convert in Binary
 ```
 
+## # Interesting Problem
 
+```py
+>>> 0.1 + 0.1 + 0.1                    Output : 0.30000000000000004
+>>>
+>>>  0.1 + 0.1 + 0.1 - 0.3             Output :  5.551115123125783e-17
+>>>
+>>> from decimal import Decimal        # decimal context manager
+>>>
+>>>  Decimal('0.1') + Decimal('0.1') + Decimal('0.1') - Decimal('0.3')           Output : Decimal('0.0')
+>>>
+>>> fram fraction import Fraction
+>>> myFrac = Fraction(2,7)
+>>> myFrac                                Output : Fraction(2,7)
+```
+
+
+## # Sets 
+
+``` py
+>>> setOne = {1,2,3,4,5}
+>>>
+>>> setOne & {4,5,6,7,8}                  Output : {4,5}
+>>> setOne | {1,8,5,9}                    Output : {1,2,3,4,5,8,9}
+>>>
+>>> setOne - {1,2,3,4,5}                  Output : set()     (Empty set is not given becasue It is Dictonary)
+>>>
+>>> type ({})                             Output : <class 'dict'>
+```
 
 
 
