@@ -8,9 +8,9 @@
 PS D:\Desktop\File_Name> Python
 
 >>> impot sys
->>> sys.getrefrencecount('Abhishek')        Output : 4294967295 (Internaly a complier optimization loop runs)
->>> sys.getrefrencecount('A')               Output : 4294967295
->>> sys.getrefrencecount(2)                 Output : 4294967295
+>>> sys.getrefrencecount('Abhishek')       # Output : 4294967295 (Internaly a complier optimization loop runs)
+>>> sys.getrefrencecount('A')              # Output : 4294967295
+>>> sys.getrefrencecount(2)                # Output : 4294967295
 ```
 
 <img src="https://github.com/user-attachments/assets/ae42ce45-5b71-440c-9251-48e27dcb1dc5" alt="Stack1" width="750" height="400">
@@ -27,14 +27,14 @@ PS D:\Desktop\File_Name> Python
 >>> myListOne = [1,2,3]
 >>> myListTwo = myListOne
 >>>
->>> myListOne                  Output : [1,2,3] 
+>>> myListOne                 # Output : [1,2,3] 
 >>>
->>> myListTwo                  Output : [1,2,3] 
+>>> myListTwo                 # Output : [1,2,3] 
 >>>
 >>> myListOne[0] = 55
->>> myListOne                  Output : [55,2,3] 
+>>> myListOne                 # Output : [55,2,3] 
 >>>
->>> myListTwo                  Output : [1,2,3]
+>>> myListTwo                 # Output : [1,2,3]
 ```
 
 > Example - 01
@@ -45,13 +45,13 @@ PS D:\Desktop\File_Name> Python
 >>> l1 = [1,2,3]
 >>> l2 = l1
 >>> 
->>> l1                     Output : [1,2,3]
->>> l2                     Output : [1,2,3]
+>>> l1                    # Output : [1,2,3]
+>>> l2                    # Output : [1,2,3]
 >>>
 >>> l1 [0] = 44
 >>>
->>> l1                    Output : [44,2,3]
->>> l2                    Output : [44,2,3]
+>>> l1                   # Output : [44,2,3]
+>>> l2                   # Output : [44,2,3]
 ```
 
 > Example - 02
@@ -63,13 +63,13 @@ PS D:\Desktop\File_Name> Python
 >>> p2 = p1
 >>> p2 = [1,2,3]
 >>>
->>> p1                     Output : [1,2,3]
->>> p2                     Output : [1,2,3]
+>>> p1                    # Output : [1,2,3]
+>>> p2                    # Output : [1,2,3]
 >>>
 >>> p1 [0] = 55
 >>>
->>> p1                    Output : [55,2,3]
->>> p2                    Output : [1,2,3]
+>>> p1                    #Output : [55,2,3]
+>>> p2                   # Output : [1,2,3]
 ```
 
 
