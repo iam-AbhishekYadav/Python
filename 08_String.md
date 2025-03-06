@@ -1,5 +1,6 @@
 # String In Python
 
+
 ## # String Declaration
 
 ``` py
@@ -33,7 +34,21 @@
 >>> num_list[0:7:2]                          # Output : '026'   (3rd parameter is for hoping)
 ```
 
+## # String Properties and Methods
 
+``` py
+str1 = "Hello World"
+print(len(str1))                     # Output: 11
+
+print(str1[1])                       # Output: 'e'
+print(str1.index('l'))               # Output: 2
+print(str1[1:4])                     # Output: 'ell' (Slicing)
+print(str1.upper())                  # Output: 'HELLO WORLD'
+print(str1.lower())                  # Output: 'hello world'
+print(str1.replace('H', 'J'))        # Output: 'Jello World'
+print(str1.split(' '))               # Output: ['Hello', 'World']
+print(str1.strip())                  # Removes leading/trailing spaces
+```
 
 
 
