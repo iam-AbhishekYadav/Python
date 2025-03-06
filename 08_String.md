@@ -38,8 +38,8 @@
 
 ``` py
 str1 = "Hello World"
-print(len(str1))                     # Output: 11
 
+print(len(str1))                     # Output: 11
 print(str1[1])                       # Output: 'e'
 print(str1.index('l'))               # Output: 2
 print(str1[1:4])                     # Output: 'ell' (Slicing)
