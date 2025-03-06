@@ -48,6 +48,8 @@ print(str1.lower())                  # Output: 'hello world'
 print(str1.replace('H', 'J'))        # Output: 'Jello World'
 print(str1.split(' '))               # Output: ['Hello', 'World']
 print(str1.strip())                  # Removes leading/trailing spaces
+print(str1.find("World"))            # Output: 6
+print(str1.count("World"))           # Output: 1
 ```
 
 
