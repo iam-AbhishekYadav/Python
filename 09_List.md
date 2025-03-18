@@ -129,7 +129,7 @@ print(marvel_heros)                         # Output: ['thor', 'ironman', 'spide
 
 **(iii) `Using unpacking or * operator`**
 
-- Recommended for better readability.\
+- Recommended for better readability.
 
 ``` py
 marvel_heros = ["Thor", "Ironman", "Spiderman"]
