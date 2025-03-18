@@ -1,6 +1,6 @@
 # List in Python
 
-## # Creating List
+## # Declaring of List
 
 ``` py
 my_list1 = [0, 1, 23, True, "sidd", None]  
