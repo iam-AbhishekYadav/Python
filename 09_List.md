@@ -76,6 +76,7 @@ print(my_list)                     # Output : [3, 1, 2, 55, 5 , 6, 4]
 **(v) `pop()`**
 
 - Removes and returns the element at the specified position (or the last element if no index is specified).
+- It gives eco back.
 - **Syntax** : list_name.pop(index)
 
 ``` py
