@@ -154,6 +154,16 @@ print([element for element in my_list2 if element > 1])         # Output: [2, 3,
 ```
 
 
+## # List Comprehension
+
+``` py
+squares = [x**2 for x in range(1, 6)]
+print(squares)                                               # Output: [1, 4, 9, 16, 25]
+
+even_numbers = [x for x in range(10) if x % 2 == 0]
+print(even_numbers)                                           # Output: [0, 2, 4, 6, 8]
+```
+
 
 
 
