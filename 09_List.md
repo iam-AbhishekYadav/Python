@@ -86,6 +86,19 @@ print(my_list)                     # Output : [3, 1, 2, 5 , 6]
 
 my_list.pop(3)
 print(my_list)                    # Output :  [3, 1, 2, 6, 4]
+```
+
+**(vi) `remove()`**
+
+- Removes the first occurrence of a specified element.
+- **Syntax** : list_name.remove(element)
+
+``` py
+my_list = [3, 1, 2, 5 , 6, 4]
+
+my_list.remove(6)
+print(my_list)                     # Output : [3, 1, 2, 5 , 4]
+```
 
 
 
