@@ -101,7 +101,7 @@ my_list.remove(6)
 print(my_list)                     # Output : [3, 1, 2, 5 , 4]
 ```
 
-## # Merge List in Python
+## # Merge Two List in Python
 
 - There are different methods to merge list in Python.
 
@@ -138,6 +138,21 @@ dc_heros = ["Superman", "Flash", "Tatman"]
 all_new_heros = [*marvel_heros, *dc_heros]
 print(all_new_heros)                            # Output: ['thor', 'ironman', 'spider', 'super', 'flash', 'batman']
 ```
+
+
+## # Iteration in List
+
+```py
+my_list2 = [0, 1, 2, 3, 4, 5]
+print(my_list2)                                                 # [0, 1, 2, 3, 4, 5]
+
+for element in my_list2:
+    print(element)                                              # Output: 0 1 2 3 4 5
+
+print([element * 2 for element in my_list2])                    # Output: [0, 2, 4, 6, 8, 10]
+print([element for element in my_list2 if element > 1])         # Output: [2, 3, 4, 5]
+```
+
 
 
 
