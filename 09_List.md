@@ -101,6 +101,18 @@ my_list.remove(6)
 print(my_list)                     # Output : [3, 1, 2, 5 , 4]
 ```
 
+## # Merge List in Python
+
+- There are different methods to merge list in Python.
+
+**(i) `Using + operator`**
+
+```py
+marvel_heros = ["Thor", "Ironman", "Spiderman"]
+dc_heros = ["Superman", "Flash", "Tatman"]
+
+all_heros = marvel_heros + dc_heros
+print(all_heros)                            # Output: ['thor', 'ironman', 'spider', 'super', 'flash', 'batman']                 
 
 
 
