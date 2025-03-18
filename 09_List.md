@@ -112,13 +112,32 @@ marvel_heros = ["Thor", "Ironman", "Spiderman"]
 dc_heros = ["Superman", "Flash", "Tatman"]
 
 all_heros = marvel_heros + dc_heros
-print(all_heros)                            # Output: ['thor', 'ironman', 'spider', 'super', 'flash', 'batman']                 
+print(all_heros)                            # Output: ['thor', 'ironman', 'spider', 'super', 'flash', 'batman']
+```
 
+**(ii) `Using extend()`**
 
+- It modifies the original list by adding elements from another list.
 
+```
+marvel_heros = ["Thor", "Ironman", "Spiderman"]
+dc_heros = ["Superman", "Flash", "Tatman"]
 
+marvel_heros.extend(dc_heros)
+print(marvel_heros)                         # Output: ['thor', 'ironman', 'spider', 'super', 'flash', 'batman']
+```
 
+**(iii) `Using unpacking or * operator`**
 
+- Recommended for better readability.\
+
+``` py
+marvel_heros = ["Thor", "Ironman", "Spiderman"]
+dc_heros = ["Superman", "Flash", "Tatman"]
+
+all_new_heros = [*marvel_heros, *dc_heros]
+print(all_new_heros)                            # Output: ['thor', 'ironman', 'spider', 'super', 'flash', 'batman']
+```
 
 
 
