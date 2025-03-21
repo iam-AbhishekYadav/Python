@@ -24,7 +24,19 @@ print(my_list.count("30"))          # Output: 2
 print("20" in my_list)              # Output: True        
 ```
 
-## # Slicing and Dicing  
+## # Slicing in List
+
+- It Cut elements on the bases of index.
+- **Syntax** : list_name[stat : end : step]
+- - Parameters:
+  - start : Index to begin the slice (inclusive). Defaults to 0 if omitted.
+  - end : Index to end the slice (exclusive). Defaults to the length of list if omitted.
+  - step : Step size, specifying the interval between elements. Defaults to 1 if omitted
+
+``` py
+my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+print(a[:})
 
 ## # Properties and Methods in List
 
