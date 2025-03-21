@@ -28,7 +28,8 @@ print("20" in my_list)              # Output: True
 
 - It Cut elements on the bases of index.
 - **Syntax** : list_name[stat : end : step]
--  **Parameters :**
+- **Parameters :**
+  
   - `start` : Index to begin the slice (inclusive). Defaults to 0 if omitted.
   - `end` : Index to end the slice (exclusive). Defaults to the length of list if omitted.
   - `step` : Step size, specifying the interval between elements. Defaults to 1 if omitted
@@ -36,7 +37,12 @@ print("20" in my_list)              # Output: True
 ``` py
 my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-print(a[:})
+print(my_list[:])                  Output : [1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(my_list[2:])                 Output : [3, 4, 5, 6, 7, 8, 9]
+print(my_list[:2])                 Output : [1, 2]
+print(my_list[1:7])                Output : [2, 3, 4, 5, 6, 7]
+print(my_list[1:7:2])              Output : [2, 4, 6]
+```
 
 ## # Properties and Methods in List
 
