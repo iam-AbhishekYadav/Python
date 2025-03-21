@@ -41,7 +41,7 @@ print(my_list[:])                  # Output : [1, 2, 3, 4, 5, 6, 7, 8, 9]
 print(my_list[2:])                 # Output : [3, 4, 5, 6, 7, 8, 9]
 print(my_list[:2])                 # Output : [1, 2]
 print(my_list[1:7])                # Output : [2, 3, 4, 5, 6, 7]
-print(my_list[1:7:2])             #  Output : [2, 4, 6]
+print(my_list[1:7:2])              # Output : [2, 4, 6]
 ```
 
 ## # Properties and Methods in List
