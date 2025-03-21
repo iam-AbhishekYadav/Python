@@ -1,6 +1,6 @@
 # List in Python
 
-- A list is a built-in dynamic sized array (automatically grows and shrinks).
+- **`List`** : A list is a built-in dynamic sized array (automatically grows and shrinks).
 - List can contain duplicate items.
 - List in Python are Mutable.
 - List are ordered. It maintain the order of elements based on how they are added.
