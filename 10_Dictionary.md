@@ -45,6 +45,26 @@ print(user["full Name"])                      # Output : Abhishek Yadav
 print(user.get("username", "Not Found"))      # Output : Default value if key is missing
 ```
 
+## # Adding and Updating Dictionary Items
+
+- We can add new key-value pairs or update existing keys by using assignment.
+
+**(i)** **`Adding Items`**
+``` py
+user = {1: 'Geeks', 2: 'For', 3: 'Geeks'}
+
+user["age"] = 22
+print(user)                          # Output : {1: 'Geeks', 2: 'For', 3: 'Geeks', 'age': 22}
+```
+
+**(i)** **`Updating Items`**
+```py
+user = {1: 'Geeks', 2: 'For', 3: 'Geeks'}
+
+user[1] = "Python dict"
+print(user)                         # Output : {1: 'Python dict', 2: 'For', 3: 'Geeks'}
+```
+
 
 
 
