@@ -36,7 +36,7 @@ user = dict(name="Siddharth", age=19, location="Delhi")
 --> **2 Ways to Access Dictionary items in Py.**
 
 **(i)** Using the key within square.  
-**(ii)** Using get()method.
+**(ii)** Using get() method.
 
 ``` py
 print(user["email"])                          # Output : abhi@gmail.com
