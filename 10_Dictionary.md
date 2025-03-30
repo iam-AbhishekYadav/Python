@@ -78,6 +78,47 @@ print(user.values())          # Output : dict_values(['Abhishek Ydav', 21, 'Delh
 print(user.items())           # Output : dict_items([('name', 'Abhishek Ydav'), ('age', 21), ('location', 'Delhi')])
 ```
 
+## # Removing Dictionary Items
+
+--> **4 Ways to Removing Dictionary Items**
+
+**(i)** **`del()`** --> Removes an item by key.
+
+```py
+user = dict(name="Abhishek Ydav", age=21, location="Delhi")
+
+del user["age"]
+print(user)                      # Output : {'name': 'Abhishek Ydav', 'location': 'Delhi'}
+```
+
+**(ii)** **`pop()`** --> Removes an item by key and returns its value.
+
+```py
+user = dict(name="Abhishek Ydav", age=21, location="Delhi")
+
+val = user.pop("name")
+print(val)                      # Output : Abhishek Ydav
+```
+
+**(iii)** **`popitem()`** -->  Removes and returns the last key-value pair.
+
+```py
+user = dict(name="Abhishek Ydav", age=21, location="Delhi")
+
+key , val = user.popitem()
+print(key)                      # Output : location
+print(val)                      # Output : Delhi
+```
+
+**(iv)** **`clear()`** -->  Empties the dictionary.
+
+```py
+user = dict(name="Abhishek Ydav", age=21, location="Delhi")
+
+user.clear()
+print(user)                      # Output : {}
+```
+
 
 
 
