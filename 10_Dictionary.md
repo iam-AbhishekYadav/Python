@@ -65,6 +65,18 @@ user[1] = "Python dict"
 print(user)                         # Output : {1: 'Python dict', 2: 'For', 3: 'Geeks'}
 ```
 
+## # Checking If a Key Exists
+
+- By using **key()** , **value()** , **item()** method.
+
+```py
+user = dict(name="Abhishek Ydav", age=21, location="Delhi")
+
+print("email" in user)        # Output : False
+print(user.keys())            # Output : dict_keys(['name', 'age', 'location'])
+print(user.values())          # Output : dict_values(['Abhishek Ydav', 21, 'Delhi'])
+print(user.items())           # Output : dict_items([('name', 'Abhishek Ydav'), ('age', 21), ('location', 'Delhi')])
+```
 
 
 
