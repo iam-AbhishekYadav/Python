@@ -46,6 +46,11 @@ print("Movie Ticket Price or you is $",price)
 ``` py
 grdae = int(input("Enter Your grade :"))
 
+if grdae >= 101 : 
+    print("Please Verify your grade.")
+
+exit()
+
 if grdae >= 90 :
     grdae = "A"
 
@@ -59,7 +64,6 @@ elif grdae >= 60 :
     grdae = "D"
 
 else : grdae = "F"
-
 
 print("Your Grade is", grdae)
 ```
