@@ -38,7 +38,31 @@ if day == "wed" :
 print("Movie Ticket Price or you is $",price)
 ```
 
+## # Question - 3
 
+> **`Grade Calulator`** --> Assign a letter grade based on a student's score : A(90-100) , B(80-89) , C(70-79), D(60-69) , F(below 60).
+
+## Solution :-
+``` py
+grdae = int(input("Enter Your grade :"))
+
+if grdae >= 90 :
+    grdae = "A"
+
+elif grdae >= 80 :
+    grdae = "B"
+
+elif grdae >= 70 :
+    grdae = "C"
+
+elif grdae >= 60 :
+    grdae = "D"
+
+else : grdae = "F"
+
+
+print("Your Grade is", grdae)
+```
 
 
 
