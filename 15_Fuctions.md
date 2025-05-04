@@ -44,8 +44,22 @@ cube = lambda x : x**3
 print(cube(3))                  # Output : 27
 ```
 
+## # Mutiple Arguments
 
+--> There are two ways of arguments in python.
 
+**(i)** **`*args`**
+
+- If we want to make a multiply function that takes any number of arguments and is able to multiply them all together. It can be done using *args.
+
+```py
+def sum_all(*args):
+     return sum(args)
+
+print(sum_all(1,2,3))                      # Output : 6
+print(sum_all(1,2,3,4,5))                  # Output : 15
+print(sum_all(1,2,3,4,5,6,7,8,9))          # Output : 45
+```
 
 
 
