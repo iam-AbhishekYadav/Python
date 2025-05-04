@@ -26,3 +26,43 @@ print(result)                   # Output : 16
 
 **(ii)** **`User-defined function`** ---> We can create our own functions based on our requirements.
 
+## # Lambda Function 
+
+- Lambda Functions are anonymous functions means that the function is without a name.
+
+- **`Syntax`** ---> &nbsp; **lambda  &nbsp; arguments &nbsp; : &nbsp; expression**
+  - **Lambda** = The keyword to define the function.
+  - **Arguments** = A comma-separated list of input parameters (like in a regular function).
+  - **Expression** = A single expression that is evaluated and returned.
+
+
+ #### Example --->
+ 
+``` py
+cube = lambda x : x**3
+
+print(cube(3))                  # Output : 27
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
