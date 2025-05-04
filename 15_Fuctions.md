@@ -61,6 +61,22 @@ print(sum_all(1,2,3,4,5))                  # Output : 15
 print(sum_all(1,2,3,4,5,6,7,8,9))          # Output : 45
 ```
 
+**(i)** **`**kwargs`**
+
+- A keyword argument is where you provide a name to the variable as you pass it into the function.
+- It collects all the additional keyword arguments passed to the function and stores them in a dictionary.
+
+```py
+def fun(**kwargs):
+    for k, val in kwargs.items():
+        print(f"{key} : {value}")
+
+fun(Name = "Abhishek Yadav")                            # Output : Name : Abhishek Yadav
+fun(Name = "Sachin" , Power = "Coding")                 # Output : Name : Scahin
+                                                        #          Power : Coding
+```
+
+
 
 
 
