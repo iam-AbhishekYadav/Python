@@ -26,8 +26,9 @@ print(result)                   # Output : 16
 
 **(ii)** **`User-defined function`** ---> We can create our own functions based on our requirements.
 
-# Function Returning Multiple Values
+# # Function Returning Multiple Values
 
+#### Example --->
 ``` py
 import math
 
@@ -43,6 +44,18 @@ area, circumference = Circle_stats(2)
 print(f"Area: {area:.2f}")                             # Output : Area: 12.57
 print(f"Circumference: {circumference:.2f}")           # Output : Circumference: 12.57
 ```
+
+# # Default Parameter Value
+
+#### Example --->
+``` py
+def greet(name = "User"):
+    return "Hello, " + name + " !!!"
+
+print(greet())                             # Output : Hello, User !!!
+print(greet("Abhishek"))                   # Output : Hello, Abhishek !!!
+```
+
 
 # # Lambda Function 
 
