@@ -26,7 +26,25 @@ print(result)                   # Output : 16
 
 **(ii)** **`User-defined function`** ---> We can create our own functions based on our requirements.
 
-## # Lambda Function 
+# Function Returning Multiple Values
+
+``` py
+import math
+
+def Circle_stats(radius):
+    area = math.pi * radius ** 2
+    circumference = 2 * math.pi * radius
+
+    return area,circumference
+
+print(Circle_stats(2))                                 # Output : (12.566370614359172, 12.566370614359172)
+
+area, circumference = Circle_stats(2)
+print(f"Area: {area:.2f}")                             # Output : Area: 12.57
+print(f"Circumference: {circumference:.2f}")           # Output : Circumference: 12.57
+```
+
+# # Lambda Function 
 
 - Lambda Functions are anonymous functions means that the function is without a name.
 
@@ -44,7 +62,7 @@ cube = lambda x : x**3
 print(cube(3))                  # Output : 27
 ```
 
-## # Mutiple Arguments
+# # Mutiple Arguments
 
 --> There are two ways of arguments in python.
 
