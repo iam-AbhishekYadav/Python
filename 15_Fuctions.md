@@ -107,6 +107,35 @@ fun(Name = "Sachin" , Power = "Coding")                 # Output : Name : Scahin
                                                         #          Power : Coding
 ```
 
+# # Generate Function Wiyh Yield
+
+- The yield keyword is used to return a list of values from a function.
+- Unlike the return keyword which stops further execution of the function, the yield keyword continues to the end of the function.
+
+``` py
+def even_generator(limit):
+    for i in range(2, limit+1, 2):
+        yield i
+    
+for num in even_generator(10):             # Output : 2 4 6 8 10
+    print(num)
+```
+
+# #  Recursive Function
+
+- A recursive function in Python is a function that calls itself during its execution.
+- This technique is used to solve problems that can be broken down into smaller, similar subproblems.
+
+``` py
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+print(factorial(5))                          # Output : 120
+```
+
 
 
 
