@@ -1,11 +1,11 @@
-# Tuples in Python
+# # Tuples in Python
 
 - **`Tuple`** - An immutable ordered collection of elements.
 - Tuples are similar to lists, but unlike lists, they cannot be changed after their creation (i.e., they are immutable).
 - Tuples can hold elements of different data types.
 - The main characteristics of tuples are being ordered , heterogeneous and immutable.
 
-## # Decleration of Dictionary
+# # Decleration of Dictionary
 
 --> Tuple is create by using **() parentheses**.
 
@@ -39,7 +39,7 @@ print(my_tuple3)                                                    # Output: (1
 > ( ) के बिना tuple बन सकता है, लेकिन readability के लिए parentheses इस्तेमाल करना बेहतर होता है।
 > Single-element tuple में , लगाना जरूरी है, वरना ये integer या string माना जाएगा।
 
-## # Indexing & Slicing
+# # Indexing & Slicing
 
 ``` py
 my_tuple = (10, 20, 30, 40, 50)
@@ -55,7 +55,7 @@ print(my_tuple[::2])                  # Output: (10, 30, 50)  (हर दूस�
 print(my_tuple[::-1])                 # Output: (50, 40, 30, 20, 10)  (Reverse tuple)
 ```
 
-## # Tuple Methods
+# # Tuple Methods
 
 ```py
 my_tuple = (1, 2, 3, 4, 2, 5, 2)
@@ -63,7 +63,7 @@ my_tuple = (1, 2, 3, 4, 2, 5, 2)
 print(my_tuple.count(2))    # Output: 3 (2 कितनी बार आया)
 print(my_tuple.index(3))    # Output: 2 (3 का index)
 ```
-## # Tuple Packing and Unpacking
+# # Tuple Packing and Unpacking
 
 **`Packing`** - Putting multiple values ​​in a tuple.
 **`Unpacking`** - Putting tuple values ​​into separate variables.
@@ -84,7 +84,7 @@ print(country)  # Output: India
 > [!WARNING]
 >  Unpacking करते समय values और variables की count match होनी चाहिए, नहीं तो error आएगा।
 
-## # Merging Of Tuples
+# # Merging Of Tuples
 
 ```py
 tuple1 = (1, 2, 3)
@@ -101,7 +101,7 @@ repeated_tuple = tuple1 * 3
 print(repeated_tuple)  # Output: (1, 2, 3, 1, 2, 3, 1, 2, 3)
 ```
 
-## # Conversion Between List & Tuple
+# # Conversion Between List & Tuple
 
 ```py
 # Tuple to List (Modification के लिए)
@@ -116,7 +116,7 @@ list2 = [10, 20, 30]
 tuple2 = tuple(list2)
 print(tuple2)  # Output: (10, 20, 30)
 ```
-## # Checking If an Element Exists in a Tuple
+# # Checking If an Element Exists in a Tuple
 
 ```py
 my_tuple = ("apple", "banana", "cherry")
@@ -125,7 +125,7 @@ print("banana" in my_tuple)           # Output: True
 print("grape" in my_tuple)            # Output: False
 ```
 
-## # Looping Over a Tuple
+# # Looping Over a Tuple
 
 ```py
 fruits = ("apple", "banana", "cherry")
@@ -147,7 +147,7 @@ output: Index 0: apple
         Index 2: cherry
 ```
 
-## # Finding Maximum, Minimum, and Sum in a Tuple
+# # Finding Maximum, Minimum, and Sum in a Tuple
 
 ```py
 numbers = (5, 2, 9, 1, 7)
@@ -157,7 +157,7 @@ print(min(numbers))  # Output: 1
 print(sum(numbers))  # Output: 24
 ```
 
-## #  Tuple as Dictionary Key (Immutable होने की वजह से Possible)
+# #  Tuple as Dictionary Key (Immutable होने की वजह से Possible)
 
 ```py
 # Tuples can be dictionary keys, unlike lists
@@ -169,7 +169,7 @@ locations = {
 print(locations[(28.6139, 77.2090)])  # Output: Delhi
 ```
 
-## # Checking if an Object is a Tuple
+# # Checking if an Object is a Tuple
 
 ```py
 my_tuple = (1, 2, 3)
