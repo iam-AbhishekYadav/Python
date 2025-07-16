@@ -5,7 +5,7 @@
 - List in Python are Mutable.
 - List are ordered. It maintain the order of elements based on how they are added.
 
-## # Declaring of List
+# # Declaring of List
 
 ``` py
 my_list1 = [0, 1, 23, True, "sidd", None]  
@@ -15,7 +15,7 @@ print(my_list1)                              # Output: [0, 1, 23, True, "sidd", 
 print(my_list2)                              # Output: [0, 1, 2, 3, 4, 5]
 ```
 
-## # Accessing List Elements
+# # Accessing List Elements
 
 - Elements in a list can be accessed using indexing.
 
@@ -29,7 +29,7 @@ print(my_list.count("30"))          # Output: 2
 print("20" in my_list)              # Output: True        
 ```
 
-## # Slicing in List
+# # Slicing in List
 
 - It Cut elements on the bases of index.
 - **Syntax** : list_name[stat : end : step]
@@ -49,7 +49,7 @@ print(my_list[1:7])                # Output : [2, 3, 4, 5, 6, 7]
 print(my_list[1:7:2])              # Output : [2, 4, 6]
 ```
 
-## # Properties and Methods in List
+# # Properties and Methods in List
 
 **(i) `Sort()`**
 
@@ -124,7 +124,7 @@ my_list.remove(6)
 print(my_list)                     # Output : [3, 1, 2, 5 , 4]
 ```
 
-## # Merge Two List in Python
+# # Merge Two List in Python
 
 - There are different methods to merge list in Python.
 
@@ -163,7 +163,7 @@ print(all_new_heros)                            # Output: ['thor', 'ironman', 's
 ```
 
 
-## # Iteration in List
+# # Iteration in List
 
 ```py
 my_list2 = [0, 1, 2, 3, 4, 5]
@@ -177,7 +177,7 @@ print([element for element in my_list2 if element > 1])         # Output: [2, 3,
 ```
 
 
-## # List Comprehension
+# # List Comprehension
 
 ``` py
 squares = [x**2 for x in range(1, 6)]
