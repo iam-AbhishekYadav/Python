@@ -35,6 +35,16 @@ class Dog:
 - An object is refered to as an instance of a given Python class.
 - Each object has its own attributes and methods, which are defined by its class.
 
+### __ init __ Function/Constructor
+
+- All classes have a function called __init()
+- Which is always execute when the class is being initiated.
+- It always takes a parameter Self
+
+### Self
+The self parameter is a reference to the current instance of the class and is used to access variables that belongs to the class.
+
+
 ``` py
 class Dog:
     def __init__(self, name, age):
