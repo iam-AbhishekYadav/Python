@@ -1,7 +1,7 @@
 # String In Python
 
 
-## # String Declaration
+# # String Declaration
 
 ``` py
 >>> Juice = "Apple Juice"
@@ -10,7 +10,7 @@
 >>> print(Juice)                      # Output : Apple Juice
 ```
 
-## # Slicing and Dicing
+# # Slicing and Dicing
 
 - It Cut elements on the bases of index.
 - slice[start,end]
@@ -34,7 +34,7 @@
 >>> num_list[0:7:2]                          # Output : '026'   (3rd parameter is for hoping)
 ```
 
-## # String Properties and Methods
+# # String Properties and Methods
 
 ``` py
 str1 = "Hello World"
@@ -53,7 +53,7 @@ print(str1.count("World"))           # Output: 1
 ```
 
 
-## # Order Formating 
+# # Order Formating 
 
 
 
