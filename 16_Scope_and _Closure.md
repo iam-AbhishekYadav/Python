@@ -1,4 +1,4 @@
-# # Scope and Closure in Python
+# Scope and Closure in Python
 
 # # Scope in Python
 
