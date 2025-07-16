@@ -47,7 +47,27 @@ dog1 = Dog("Buddy", 3)
 print(dog1.name)                                # Output : Buddy
 print(dog1.age)                                 # Output : 3
 ```
+# # Class Method and Self
 
+**`Problem`** ---> Add a method to Car Class that displays the full name of the car (Brand and Model)
+
+``` py
+class Car:
+    def __init__(self, brand ,model):
+        self.brand = brand
+        self.model = model
+
+    def fullName(self):
+        return f"{self.brand} {self.model}"
+    
+
+my_car = Car("Tata", "Safari")
+
+print(my_car.brand)                                 # Output : Tata
+print(my_car.model)                                 # Output : Safari
+
+print(my_car.fullName())                            # Output : Tata Safari
+```
 
 
 
