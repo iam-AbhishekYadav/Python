@@ -107,7 +107,7 @@ fun(Name = "Sachin" , Power = "Coding")                 # Output : Name : Scahin
                                                         #          Power : Coding
 ```
 
-# # Generate Function Wiyh Yield
+# # Generate Function With Yield
 
 - The yield keyword is used to return a list of values from a function.
 - Unlike the return keyword which stops further execution of the function, the yield keyword continues to the end of the function.
