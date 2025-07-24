@@ -84,6 +84,7 @@ print(my_car.fullName())                            # Output : Tata Safari
 - Inheritance allows a class (called a child or derived class) to inherit attributes and methods from another class (called a parent or base class).
 - It promotes code reusability by sharing attributes and methods across classes.
 
+**`Super Method`** ---> It is used to access methods of the parent class.
 ```py
 class Car:
     def __init__(self, brand, model):
@@ -265,7 +266,8 @@ print(s2.name, s2.roll_no, Student.school_name)                 # Output : Jessa
 
 - Static method is a type of method that does not require any instance to be called.
 - Static method that don't use the self parameter (Work at class level).
-- It is very similar to the class method but the difference is that the static method doesn't have a mandatory argument like reference to the object − self or reference to the class
+- It is very similar to the class method but the difference is that the static method doesn't have a mandatory argument like reference to the object − self or reference to the class.
+- Static method can't access or modify class state and generally for utility.
 
 ## How to Create Static Method in Python?
 
@@ -295,8 +297,50 @@ e1.showcount()                            # Output : 3
 Employee.showcount()                      # Output : 3
 ```
 
+# # Class Method 
+
+- A class method is bound to the class and receives the class as an implicit first argument.
+- Class method works with the class since its parameter is always the class itself.
+
+``` py
+class Person :
+    name = "anonynomus"
+
+    @classmethod
+    def changeName(cls, name):
+        cls.name = name
 
 
+P1 = Person()
+P1.changeName("Abhishek Yadav")
+
+print(P1.name)                         # Output : Abhishek Yadav
+print(Person.name)                     # Output : Abhishek Yadav
+```
+
+# # Property Method 
+
+- We use @property decorator on any method in the class to use the method as a property.
+- t allows developers to create properties within a class, providing a way to control access to an attribute.
+
+``` py
+class Student:
+    def __init__(self, phy, chem, math):
+        self.phy = phy
+        self.chem = chem
+        self.math = math
+
+
+    @property
+    def percentage(self):
+        return str((self.phy + self.chem + self.math) / 3) + "%"
+    
+student1 = Student(98, 97, 99)
+print(student1.percentage)                            # Output : 98.0 %
+
+student1.phy = 86                                     # Change Student1 Phy marks by 86
+print(student1.percentage)                            # Output : 94.0 %
+```
 
 
 
