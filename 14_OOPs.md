@@ -165,14 +165,14 @@ print(obj.name)                             # Output : Jhon
 ``` py
 class Protected:
     def __init__(self):
-        self._age = 30  # Protected attribute
+        self._age = 30          # Protected attribute
 
 class Subclass(Protected):
     def display_age(self):
-        print(self._age)  # Accessible in subclass
+        print(self._age)        # Accessible in subclass
 
 obj = Subclass()
-obj.display_age()
+obj.display_age()               # Output : 30
 ```
 **(iii)** **`Private Members`** ---> 
 
@@ -192,17 +192,108 @@ print(obj.salary())           # Works
 # print(obj.__salary)         # Raises AttributeError
 ```
 
+# # Polymorphism 
+
+- The word "polymorphism" means "many forms"
+- In programming it refers to methods/functions/operators with the same name that can be executed on many objects or classes.
+
+``` py
+class Car:
+    def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+
+    def move(self):
+        print("Drive!")
+
+class Boat:
+    def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+
+    def move(self):
+        print("Sail!")
+
+class Plane:
+    def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+
+    def move(self):
+        print("Fly!")
+
+car1 = Car("Ford", "Mustang")       #Create a Car object
+boat1 = Boat("Ibiza", "Touring 20") #Create a Boat object
+plane1 = Plane("Boeing", "747")     #Create a Plane object
+
+for x in (car1, boat1, plane1):
+    x.move()
+```
+
+# # Class Variable
+
+- A class variable is a variable that is declared inside of a Class but outside of any instance method or __init__() method.
+- Class Variable (also known as class attributes) are shared across all instances (objects) of a class.
+- They belong to the class itself, not to any specific instance.
 
 
+<img src="https://github.com/user-attachments/assets/909286dd-a6b3-4061-8837-8f6397cfe2f7"  width="450" height="450">
 
+``` py
+class Student:
+    # Class variable
+    school_name = 'ABC School '
+    
+    def __init__(self, name, roll_no):
+        self.name = name
+        self.roll_no = roll_no
 
+# create first object
+s1 = Student('Emma', 10)
 
+# access class variable
+print(s1.name, s1.roll_no, Student.school_name)                 # Output : Emma 10 ABC School
 
+# create second object
+s2 = Student('Jessa', 20)
 
+# access class variable
+print(s2.name, s2.roll_no, Student.school_name)                 # Output : Jessa 20 ABC School
+```
 
+# # Static Method
 
+- Static method is a type of method that does not require any instance to be called.
+- Static method that don't use the self parameter (Work at class level).
+- It is very similar to the class method but the difference is that the static method doesn't have a mandatory argument like reference to the object − self or reference to the class
 
+## How to Create Static Method in Python?
 
+There are two ways to create Python static methods −
+
+- Using **`staticmethod()`** Function
+- Using **`@staticmethod`** Decorator
+
+``` py
+class Employee:
+    empCount = 0
+    def __init__(self, name, age):
+        self.__name = name
+        self.__age = age
+        Employee.empCount += 1
+
+    # creating staticmethod
+    @staticmethod
+    def showcount():
+        print (Employee.empCount)
+
+e1 = Employee("Bhavana", 24)
+e2 = Employee("Rajesh", 26)
+e3 = Employee("John", 27)
+
+e1.showcount()                            # Output : 3
+Employee.showcount()                      # Output : 3
+```
 
 
 
