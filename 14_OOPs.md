@@ -79,8 +79,32 @@ print(my_car.model)                                 # Output : Safari
 print(my_car.fullName())                            # Output : Tata Safari
 ```
 
+# # Abstraction
 
+- Hidding the implementation details of a class and only showing the essential features to the user.
+- This approach helps in reducing the complexity and increasing the efficiency of application development.
 
+``` py
+class Car:
+    def __init__(self):
+        self.acc = False
+        self.brk = False
+        self.clucth = False
+
+    def start(self):
+        self.clucth = True
+        self.acc = True
+        print("Cra satrted ...")                                   # Output : Car started ...
+    
+
+my_car = Car()
+my_car.start()
+```
+
+# # Encapsulation
+
+Encapsulation is the process of wrapping data and function into a single unit (object).
+ 
 
 
 
