@@ -79,6 +79,34 @@ print(my_car.model)                                 # Output : Safari
 print(my_car.fullName())                            # Output : Tata Safari
 ```
 
+# # Inheritance
+
+- Inheritance allows a class (called a child or derived class) to inherit attributes and methods from another class (called a parent or base class).
+- It promotes code reusability by sharing attributes and methods across classes.
+
+```py
+class Car:
+    def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+
+    def fullName(self):
+        return f"{self.brand} {self.model}"
+    
+class ElectricCar(Car):
+    def __init__(self, brand, model, battery_size):
+        super().__init__(brand, model)
+        self.battery_size = battery_size
+
+my_car = ElectricCar("Tesla", "Model - S", "85kwh")
+
+print(my_car.brand)                                 # Output : Tesla
+print(my_car.model)                                 # Output : Model - S
+print(my_car.battery_size)                          # Output : 85kwh
+
+print(my_car.fullName())                            # Output : Tesla Model - S
+```
+
 # # Abstraction
 
 - Hidding the implementation details of a class and only showing the essential features to the user.
@@ -103,8 +131,80 @@ my_car.start()
 
 # # Encapsulation
 
-Encapsulation is the process of wrapping data and function into a single unit (object).
- 
+- Encapsulation is the process of wrapping data and function into a single unit (object).
+- It protects data from unauthorized access and accidental modification.
+- Enhances modularity by hiding internal implementation details.
+
+## Access Specifiers
+
+<img src="https://github.com/user-attachments/assets/2fa89236-af43-4785-98b2-b33a7a39167b"  width="500" height="350">
+
+ **(i)** **`Public Members`** ---> 
+
+ - Public members are accessible from anywhere, both inside and outside the class.
+ - These are the default members in Python.
+
+``` py
+class Public:
+    def __init__(self):
+        self.name = "John"
+
+    def display_name(self):
+        print(self.name)                     # Output : Jhon
+
+obj = Public()
+obj.display_name()
+print(obj.name)                             # Output : Jhon
+```
+
+**(ii)** **`Protected Members`** ---> 
+
+- Protected members are identified with a single underscore (_).
+- They are meant to be accessed only within the class or its subclasses.
+
+``` py
+class Protected:
+    def __init__(self):
+        self._age = 30  # Protected attribute
+
+class Subclass(Protected):
+    def display_age(self):
+        print(self._age)  # Accessible in subclass
+
+obj = Subclass()
+obj.display_age()
+```
+**(iii)** **`Private Members`** ---> 
+
+- Private members are identified with a double underscore (__).
+- It cannot be accessed directly from outside the class.
+
+``` py
+class Private:
+    def __init__(self):
+        self.__salary = 50000   # Private attribute
+
+    def salary(self):
+        return self.__salary   # Access through public method
+
+obj = Private()
+print(obj.salary())           # Works
+# print(obj.__salary)         # Raises AttributeError
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
