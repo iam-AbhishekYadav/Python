@@ -42,9 +42,9 @@ def timer(func):
 
 @timer
 def example_function(n):
-    time.sleep(n)                                                    # Delay execution for a given number of seconds.
+    time.sleep(n)                                                   # Delay execution for a given number of seconds.
 
-example_function(2)                                                  # Output : example_function run in 2.0004477500915527 time
+example_function(2)                                                 # Output : example_function run in 2.0004477500915527 time
 ```
 
 
