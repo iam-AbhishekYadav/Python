@@ -40,7 +40,7 @@ def timer(func):
         return result
     return wrapper
 
-@timer
+@timer                                                              # Decorator
 def example_function(n):
     time.sleep(n)                                                   # Delay execution for a given number of seconds.
 
